@@ -108,8 +108,11 @@ footer{
 }
 
 .mostrar>button>a{
-    color: var(--cardColorD);
+    display: block;
+    color: inherit;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 
 section{
