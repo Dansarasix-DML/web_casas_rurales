@@ -107,6 +107,11 @@ footer{
     box-shadow: none;
 }
 
+.mostrar>button>a{
+    color: var(--cardColorD);
+    text-decoration: none;
+}
+
 section{
     display: flex;
     flex-direction: column;
@@ -114,8 +119,33 @@ section{
 }
 
 section>h2{
-    margin-top: 10px;
+    margin: 10px 0px;
     color: var(--color4);
+}
+
+.filtros{
+    margin: 0% 5%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filtros>div{
+    display: flex;
+    align-items: center;
+    background-color: #969696;
+    color: #474747;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: larger;
+    font-weight: 600;
+    box-shadow: 0 0 5px #000;
+}
+
+.filtros>div>a{
+    color: #474747;
+    text-decoration: none;
 }
 
 aside{
@@ -532,6 +562,8 @@ ul, ol {
     form, form>button, .mostrar>button{font-size: 21px;}
 
     footer>h3{font-size: 20px;}
+
+    .filtros>div{font-size: x-large;}
 
     /*
         #FORMULARIO
