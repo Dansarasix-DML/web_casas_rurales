@@ -1,0 +1,140 @@
+:root{
+    --color1: #F3DEBA;
+    --color2: #A9907E;
+    --color3: #ABC4AA;
+    --color4: #675D50;
+    --color5: #FFF;
+    --color6: #e5dfd8;
+    --cardColorA: #4d2b18;
+    --cardColorB: #c4a451;
+    --cardColorC: #d3c9a4;
+    --cardColorD: white;
+    --cardColorE: rgb(86,86,86);
+    --cardPrice: #d0ffa8;
+    --cardScore: #f9ffa8;
+    --colorE: #4d2b18;
+    --colorA: #9a856a;
+    --colorB: #6d6050;
+    --colorC: #fff;
+    --colorD: rgba(255, 255, 255, 0.2);
+}
+
+.material-symbols-rounded {
+    font-size: 75px !important;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+a, a:hover {
+    cursor: pointer;
+    color: var(--cardPrice);
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Guru', sans-serif;
+}
+
+body{background-color: var(--color6);}
+
+main{
+    color: var(--color6);
+    background-image: url("../img/223109c96071bb64b41c5aeb98ee7bea.jpg");
+    background-size: cover;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+div.entrada{
+    background-image: url("../img/jhjosidsdhf454.jpg");
+    background-size: cover;
+    background-position: 0% 60%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    text-shadow: 1px 1px 10px black, 2px 2px 6px black;
+}
+
+div.entrada h3 p{
+    margin: 1em;
+    font-size: 2rem;
+    text-align: center;
+}
+
+div.entrada a {
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+}
+
+div.text p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10%;
+    animation-delay: 4s;
+    animation-name: fadeOut;
+    animation-fill-mode: forwards;
+}
+
+span {
+    color: #23291d;
+    font-size: 1.8rem;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    text-shadow: 0px 2px 6px rgb(255, 255, 255), 0px 0px 4px rgb(255, 255, 255);
+}
+
+.span1 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+.span2 {
+    animation-delay: 2s;
+    animation-duration: 1s;
+}
+
+.span3 {
+    animation-delay: 3s;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 480px) {
+    span {
+        font-size: 40px;
+    }
+}
